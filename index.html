@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f4f4f0"><meta name="description" content="Hành trình học kỹ năng văn phòng, thực hành và tự kiểm tra bài tập.">
+  <title>hanhtrinhwNgoc — Master Word và Excel</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <aside class="sidebar">
+    <a class="brand" href="#home"><span class="brand-icon">h<span>↗</span></span><span>hanhtrinhw<span class="brand-light">Ngoc</span><small>HỌC ĐỂ LÀM ĐƯỢC</small></span></a>
+    <div class="nav-label">KHÔNG GIAN HỌC</div>
+    <button class="nav-item active" data-view="home"><span>⌂</span> Tổng quan</button>
+    <button class="nav-item" data-view="curriculum"><span>▤</span> Lộ trình <b>12 tuần</b></button>
+    <button class="nav-item" data-view="practice"><span>◉</span> Bài tập của tôi</button>
+    <div class="sidebar-bottom"><div class="avatar">N</div><div><strong>Ngọc</strong><small>Hành trình của bạn</small></div><span class="dots">···</span></div>
+  </aside>
+  <main>
+    <header class="topbar"><div class="crumb">Không gian học <span>/</span> <strong id="crumb-title">Tổng quan</strong></div><div class="top-actions"><span class="save-note">● Đã lưu trên thiết bị</span><button class="icon-button" aria-label="Trợ giúp">?</button><div class="avatar small-avatar">N</div></div></header>
+    <section class="page" id="view-home">
+      <div class="welcome-row"><div><div class="eyebrow"><span class="spark">✳</span> HÀNH TRÌNH HỌC TẬP CỦA BẠN</div><h1>Làm chủ Word<br><em>và Excel.</em></h1><p class="lede">24 tuần từ kỹ năng nền tảng đến tài liệu chuyên nghiệp, báo cáo dữ liệu và quy trình tự động hóa.</p><button class="primary" id="continue-btn">Tiếp tục học <span>→</span></button></div><div class="hero-art"><div class="art-orbit orbit-one"></div><div class="art-orbit orbit-two"></div><div class="art-card"><span>✳</span><strong>Word + Excel<br>thực chiến</strong><small>MỖI TUẦN MỘT SẢN PHẨM</small></div><div class="art-tag">✦ &nbsp; HỌC THEO NHỊP CỦA BẠN</div></div></div>
+      <div class="stats"><div><span>TIẾN ĐỘ KHÓA HỌC</span><strong id="progress-label">0<small>%</small></strong><div class="progress-track"><i id="progress-bar"></i></div></div><div><span>ĐÃ HOÀN THÀNH</span><strong id="done-label">0 <small>/ 24 tuần</small></strong></div><div><span>NHỊP HỌC GỢI Ý</span><strong>4–6 <small>giờ / tuần</small></strong></div></div>
+      <div class="section-heading"><div><div class="eyebrow">LỘ TRÌNH CỦA BẠN</div><h2>24 tuần, từ nền tảng đến thành thạo</h2></div><button class="text-button" data-goto="curriculum">Xem toàn bộ lộ trình <span>→</span></button></div>
+      <div class="course-layout"><div class="week-list" id="week-list"></div><aside class="side-card"><div class="card-topline"><span class="eyebrow">MỤC TIÊU CUỐI KHÓA</span><span class="target-icon">↗</span></div><h3>Một bộ sản phẩm<br>đưa vào công việc.</h3><p>Bảng theo dõi, báo cáo, slide và quy trình do chính bạn thực hiện.</p><div class="deliverables"><div><i>✓</i> File Excel theo dõi</div><div><i>✓</i> Báo cáo có nhận định</div><div><i>✓</i> Slide trình bày kết quả</div><div><i>✓</i> Quy trình làm việc rõ ràng</div></div><button class="outline" data-goto="practice">Mở bài tập capstone <span>→</span></button></aside></div>
+      <footer>Giáo trình Word và Excel do hanhtrinhwNgoc biên soạn từ nguồn học chính thức và bài thực hành tự tạo.</footer>
+    </section>
+    <section class="page hidden" id="view-curriculum"><div class="eyebrow">LỘ TRÌNH 24 TUẦN · WORD + EXCEL</div><h1 class="subpage-title">Đi từ nền tảng đến <em>đầu ra thực tế.</em></h1><p class="lede">12 tuần làm chủ Word, 12 tuần làm chủ Excel. Mỗi tuần có bài học và sản phẩm thực hành.</p><div class="curriculum-grid" id="curriculum-grid"></div></section>
+    <section class="page hidden" id="view-lesson"><button class="back-link" data-goto="curriculum">← Trở lại lộ trình</button><div id="lesson-content"></div></section>
+    <section class="page hidden" id="view-practice"><div class="eyebrow">XƯỞNG THỰC HÀNH</div><h1 class="subpage-title">Nộp bài, nhận <em>gợi ý cải thiện.</em></h1><p class="lede">Chọn tài liệu trên thiết bị. Trang đọc nội dung để đối chiếu với rubric; tệp được xử lý cục bộ và không tải lên máy chủ.</p><div class="resource-downloads"><a href="Lo-trinh-Master-Word-Excel-24-tuan.docx" download>↓ Tải giáo trình Word · 24 tuần</a><a href="Workbook-thuc-hanh-Word-Excel.xlsx" download>↓ Tải workbook bài tập Excel</a><a href="Lo-trinh-Master-Word-Excel-24-tuan.md" download>↓ Tải lộ trình dạng Markdown</a></div><div class="practice-grid"><div class="upload-card"><div class="upload-icon">↑</div><h2>Tải bài làm lên</h2><p>Hỗ trợ DOCX, XLSX, CSV, PDF, TXT và Markdown. Tối đa 12 MB mỗi tệp.</p><label class="dropzone" id="dropzone"><input type="file" id="file-input" accept=".txt,.md,.csv,.pdf,.docx,.xlsx,text/plain,text/csv,application/pdf,application/vnd.openxmlformats-officedocument.wordprocessingml.document,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"><span class="upload-plus">＋</span><strong>Kéo thả tài liệu vào đây</strong><span>hoặc <u>chọn tệp từ thiết bị</u></span></label><div class="file-row hidden" id="file-row"><span>▤</span><div><strong id="file-name"></strong><small id="file-size"></small></div><button id="remove-file" aria-label="Xóa tệp">×</button></div><label class="field-label" for="assignment">Chọn bài muốn kiểm tra</label><select id="assignment"><option value="word">Bài thực hành Word</option><option value="excel">Bài thực hành Excel</option><option value="capstone">Capstone Word + Excel</option><option value="report">Báo cáo một trang</option><option value="sop">Quy trình SOP</option></select><button class="primary full" id="review-btn" disabled>Kiểm tra bài làm <span>→</span></button><div class="privacy-note">🔒 Tài liệu được xử lý ngay trên trình duyệt và không tải lên máy chủ.</div></div><div class="review-card" id="review-card"><div class="review-placeholder"><div class="review-spark">✳</div><h3>Gợi ý rà soát bài làm<br>sẽ hiện ở đây.</h3><p>Tải bài tập lên để rà các thành phần chính và xem mục cần bổ sung.</p></div></div></div><div class="rubric-strip"><div><span class="eyebrow">CÁCH ĐÁNH GIÁ</span><h3>Gợi ý rà soát, không chấm điểm tự động.</h3></div><div class="rubric-points"><span>01 &nbsp; Đủ thành phần</span><span>02 &nbsp; Rõ ràng, có cấu trúc</span><span>03 &nbsp; Có bằng chứng / công thức</span><span>04 &nbsp; Đúng đầu ra bài tập</span></div></div></section>
+  </main>
+  <script src="course-weeks.js"></script><script src="app.js"></script>
+</body>
+</html>
